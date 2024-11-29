@@ -26,6 +26,7 @@ const options = {
 const specs = swaggerJsDoc(options);
 
 const app = express();
+const port = process.env.PORT || 4000;
 
 app.use('/api-docs', swaggerUI.serve, swaggerUI.setup(specs));
 
@@ -34,7 +35,7 @@ app.use(cors());
 app.use(express.json());
 app.use('/', apiRoutes);
 
-app.listen(4000, async () => {
-  console.log('Server is listening');
+app.listen(port, async () => {
+  console.log(`Server is listening on port ${port}`);
   await connectToDb();
 });
