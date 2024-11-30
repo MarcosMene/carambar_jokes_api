@@ -1,7 +1,7 @@
 require('dotenv').config();
 
 const apiUrl = process.env.NODE_ENV === 'production'
-    ? 'https://carambar-jokes-api-7d22.onrender.com/blagues/random'
+    ? 'https://carambar-jokes-api-xbz1.onrender.com/blagues/random'
     : process.env.API_URL; // This will use 'http://localhost:4000' in development
 
 const frontendUrl = process.env.FRONTEND_URL;
