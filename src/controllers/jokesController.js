@@ -40,6 +40,8 @@ exports.randomJoke = async (request, response) => {
     const jokes = await Joke.findAll()
     if(!jokes.length) return response.status(404).json({message:"No jokes available"})
 
+
+      //find random number with length of jokes
       const randomIndex = Math.floor(Math.random()*jokes.length)
       response.status(200).json(jokes[randomIndex])
   }catch(error){

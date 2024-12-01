@@ -1,5 +1,6 @@
 const {Sequelize} = require("sequelize");
 
+//create database jokes.sqlite
 const sequelize = new Sequelize(
   {
     dialect:"sqlite",
@@ -7,6 +8,8 @@ const sequelize = new Sequelize(
   }
 )
 
+
+//connect to database
 const connectToDb = async ()=>{
   try{
     await sequelize.authenticate()
