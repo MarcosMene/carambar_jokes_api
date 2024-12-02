@@ -28,7 +28,12 @@ This API is deployed on render.com.
 
 ---
 
+## Repository API and Swagger
+You can find the API documentation on [Repository API](https://dashboard.render.com/web/srv-ct5joqm8ii6s73djtc10)
+and the repo on [Swagger](https://app.swaggerhub.com/apis/MENEGHETTIMARCOS_1/carambar/1.0.0#/) - server: ```https://carambar-jokes-api-xbz1.onrender.com - SwaggerHub API Auto Mocking```
 
+
+---
 
 ## Download the project to work on local mode
 
@@ -50,7 +55,7 @@ This API is deployed on render.com.
 4- To run the project on your computer
 ```npm run dev```
 
-5- To see the api docs open your browser with this link:  (http://localhost:4000/api-docs/)
+5- To see the api docs open your browser with this link:  `http://localhost:4000/api-docs/`
 
 
 ## API docs (local mode)
@@ -72,10 +77,15 @@ Create a:
 #### To create a new POST 
 - Click on the button 'Body' and select 'raw'
 - add the following JSON
+
+**example:**
+
 {
   "text": "Pourquoi les poissons travaillent-ils illégalement ?",
   "answer": "Parce qu’ils n’ont pas de FISH de paie."
 }
+
+
 - Click on the button 'Send'
 #### To see all jokes
 1- On **GET** all jokes
@@ -114,12 +124,12 @@ To work with the frontend page, you need:
 3- to install the dependencies with the following command:
 ```npm install```
 
-4- to work on local mode, you need to make a change on fetch.js file. On this file, change axios.get('http...') to ('http://localhost:4000/blagues/random)
+4- to work on local mode, you need to make a change on fetch.js file. On this file, change axios.get('http...') to `http://localhost:4000/blagues/random`
 
 5- start the project 
 ```npm start```
 
-It will open the browser on http://localhost:3000/carambar_jokes_front
+It will open the browser on `http://localhost:3000/carambar_jokes_front`
 
 ---
 
